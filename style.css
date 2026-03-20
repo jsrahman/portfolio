@@ -25,6 +25,10 @@
 
 html { scroll-behavior: smooth; }
 
+#root {
+    width: 100%;
+}
+
 body {
     background: var(--bg);
     color: var(--text-main);
@@ -1084,4 +1088,3 @@ textarea.form-input { resize: vertical; min-height: 80px; }
     .ping::after { animation: none; }
     * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
-

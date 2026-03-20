@@ -1,398 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Abdur Rahman | Frontend Developer — Next.js, React &amp; TypeScript</title>
-    <meta name="description" content="Portfolio of Abdur Rahman. Frontend Developer with 3+ years of experience building SaaS and real-time applications using Next.js, TypeScript, and React.">
-    <meta name="keywords" content="Abdur Rahman, Frontend Developer, Next.js, React, TypeScript, JavaScript, TailwindCSS, SaaS, Web Development, Dhaka, Bangladesh">
-    <meta name="author" content="Abdur Rahman">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://github.com/jsrahman">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdur Rahman | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Abdur Rahman. Frontend Developer with 3+ years of experience building SaaS and real-time applications using Next.js, TypeScript, and React."
+    />
+    <meta
+      name="keywords"
+      content="Abdur Rahman, Frontend Developer, Next.js, React, TypeScript, JavaScript, TailwindCSS, SaaS, Web Development, Dhaka, Bangladesh"
+    />
+    <meta name="author" content="Abdur Rahman" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://github.com/jsrahman" />
 
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://github.com/jsrahman">
-    <meta property="og:title" content="Abdur Rahman | Frontend Developer">
-    <meta property="og:description" content="Frontend Developer with 3+ years of experience building high-performance SaaS and real-time applications using Next.js, TypeScript, and React.">
-    <meta property="og:image" content="src/profile.jpg">
-    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://github.com/jsrahman" />
+    <meta property="og:title" content="Abdur Rahman | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend Developer with 3+ years of experience building high-performance SaaS and real-time applications using Next.js, TypeScript, and React."
+    />
+    <meta property="og:image" content="/favicon.png" />
+    <meta property="og:locale" content="en_GB" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Abdur Rahman | Frontend Developer">
-    <meta name="twitter:description" content="Frontend Developer specialising in Next.js, TypeScript, and React. 3+ years building SaaS &amp; real-time apps.">
-    <meta name="twitter:image" content="src/profile.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abdur Rahman | Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Frontend Developer specialising in Next.js, TypeScript, and React. 3+ years building SaaS and real-time apps."
+    />
+    <meta name="twitter:image" content="/favicon.png" />
 
-    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Abdur Rahman",
-      "url": "https://github.com/jsrahman",
-      "image": "src/profile.jpg",
-      "jobTitle": "Frontend Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Thesoftking LTD."
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Bangladesh National University"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/abrahman",
-        "https://github.com/jsrahman"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mirpur, Dhaka",
-        "addressRegion": "Dhaka",
-        "addressCountry": "BD"
-      }
-    }
-    </script>
-</head>
-<body>
-    
-    <div class="noise-overlay"></div>
-    <div class="ambient-glow"></div>
-
-
-
-    <main class="bento-grid">
-        
-        <section class="card profile-hero">
-            <div class="profile-content">
-                <div class="memoji-container">
-                    <img src="src/profile.jpg" alt="Profile photo of Abdur Rahman">
-                    <div class="status-indicator">
-                        <span class="ping"></span>
-                    </div>
-                </div>
-                <div class="profile-text">
-                    <h1>Abdur Rahman</h1>
-                    <h2 data-i18n="role">Frontend Developer at <span class="highlight">Thesoftking</span></h2>
-                    <p data-i18n="bio">Frontend Developer with 3+ years of experience building high-performance SaaS and real-time applications using Next.js, TypeScript, and React.</p>
-                </div>
-            </div>
-            <div class="action-buttons">
-                <a href="src/cv of Abdur Rahman.pdf" target="_blank" rel="noopener noreferrer" class="btn primary">
-                    <i class="fas fa-file-pdf"></i> <span data-i18n="download_cv">Download CV</span>
-                </a>
-                <button class="btn secondary" id="open-pro-modal">
-                    <i class="fas fa-plus"></i> <span data-i18n="more_info">More Info</span>
-                </button>
-            </div>
-        </section>
-
-        <section class="card social-card">
-            <h3 data-i18n="social_title">Connect With Me</h3>
-            <div class="social-grid-links">
-                <a href="https://www.linkedin.com/in/abrahman" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/jsrahman" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="mailto:abrahmandevbd@gmail.com" class="social-btn email" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-                <a href="tel:+8801911411270" class="social-btn instagram" aria-label="Phone">
-                    <i class="fas fa-phone"></i>
-                    <span>Phone</span>
-                </a>
-            </div>
-        </section>
-
-        <section class="card now-card">
-            <h3 data-i18n="now_title">Right Now</h3>
-            <ul class="now-list">
-                <li class="now-item">
-                    <span class="now-dot work"></span>
-                    <span data-i18n="now_1">Frontend Developer at Thesoftking LTD.</span>
-                </li>
-                <li class="now-item">
-                    <span class="now-dot build"></span>
-                    <span data-i18n="now_2">Building SaaS &amp; real-time web apps</span>
-                </li>
-                <li class="now-item">
-                    <span class="now-dot location"></span>
-                    <span data-i18n="now_3">Dhaka, Bangladesh · Open to remote</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="card location-card">
-            <div class="map-container">
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    frameborder="0" 
-                    scrolling="no" 
-                    marginheight="0" 
-                    marginwidth="0" 
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=90.3200%2C23.7300%2C90.4500%2C23.8200&amp;layer=mapnik&amp;marker=23.7808%2C90.3592" 
-                    title="Map of Dhaka, Bangladesh">
-                </iframe>
-            </div>
-            <div class="glass-overlay">
-                <div class="time-widget">
-                    <span id="local-time">--:--</span>
-                    <small>Dhaka, BD</small>
-                </div>
-                <div class="location-icon">
-                    <i class="fas fa-location-arrow"></i>
-                </div>
-            </div>
-        </section>
-
-        <section class="card experience-card">
-            <h3 data-i18n="career_title"><i class="fas fa-briefcase"></i> Career</h3>
-            <div class="timeline">
-                <div class="timeline-item current">
-                    <div class="time-dot"></div>
-                    <div class="time-content">
-                        <strong>Thesoftking LTD.</strong>
-                        <span>Frontend Developer</span>
-                        <small>Sep 2023 - Present</small>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="time-dot"></div>
-                    <div class="time-content">
-                        <strong>Febula IT</strong>
-                        <span>Frontend Developer</span>
-                        <small>May 2023 - Aug 2023</small>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="time-dot"></div>
-                    <div class="time-content">
-                        <strong>Inorium Ltd. (Remote)</strong>
-                        <span>Frontend Developer</span>
-                        <small>Jan 2021 - Apr 2023</small>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="card highlight-card">
-            <div class="trophy-icon"><i class="fas fa-trophy"></i></div>
-            <div class="highlight-content">
-                <span class="badge-gold" data-i18n="award_badge">3+ Years</span>
-                <h3>Frontend Excellence</h3>
-                <p data-i18n="award_desc">Led frontend teams, built 100+ sales products, and reduced project completion time by 20%.</p>
-            </div>
-        </section>
-
-        <section class="card services-card">
-            <h3 data-i18n="skills_title">Areas of Impact</h3>
-            <div class="services-list">
-                <div class="service-pill">
-                    <i class="fab fa-react blue"></i>
-                    <div>
-                        <strong>React &amp; Next.js</strong>
-                        <small>SSR, SSG, Redux, Jest, REST API</small>
-                    </div>
-                </div>
-                <div class="service-pill">
-                    <i class="fab fa-js-square" style="color:#f0db4f"></i>
-                    <div>
-                        <strong>JavaScript / TS</strong>
-                        <small>ES6+, TypeScript, Redux, CI/CD</small>
-                    </div>
-                </div>
-                <div class="service-pill">
-                    <i class="fas fa-paint-brush green"></i>
-                    <div>
-                        <strong>UI &amp; Styling</strong>
-                        <small>TailwindCSS, SCSS, Bootstrap</small>
-                    </div>
-                </div>
-                <div class="service-pill">
-                    <i class="fab fa-git-alt red"></i>
-                    <div>
-                        <strong> Workflow</strong>
-                        <small>Git, GitHub, GulpJS</small>
-                    </div>
-                </div>
-                <div class="service-pill">
-                    <i class="fas fa-rocket" style="color:#bf5af2"></i>
-                    <div>
-                        <strong>Performance</strong>
-                        <small>Optimization, Real-time Apps</small>
-                    </div>
-                </div>
-                <div class="service-pill">
-                    <i class="fas fa-layer-group" style="color:#ff9f0a"></i>
-                    <div>
-                        <strong>Theming</strong>
-                        <small>Ghost CMS, Templates</small>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <a href="#" class="card project-card p-1">
-            <div class="project-content">
-                <div class="project-top">
-                    <i class="fas fa-gamepad"></i>
-                    <span class="project-tag">Gaming Platform</span>
-                </div>
-                <h3>Goldriders</h3>
-                <p data-i18n="proj_1_desc">Scalable gaming platform built with Next.js and Zustand, with optimized rendering.</p>
-            </div>
-            <i class="fas fa-arrow-up-right-from-square arrow-icon"></i>
-        </a>
-
-        <a href="#" class="card project-card p-2">
-            <div class="project-content">
-                <div class="project-top">
-                    <i class="fas fa-users"></i>
-                    <span class="project-tag">Social Media</span>
-                </div>
-                <h3>Social Platform</h3>
-                <p data-i18n="proj_2_desc">Paid social media app with real-time chat, membership system, and advanced post interactions.</p>
-            </div>
-            <i class="fas fa-arrow-up-right-from-square arrow-icon"></i>
-        </a>
-
-        <a href="#" class="card project-card p-3">
-            <div class="project-content">
-                <div class="project-top">
-                    <i class="fas fa-bolt"></i>
-                    <span class="project-tag">Live Gaming</span>
-                </div>
-                <h3>Stakegame</h3>
-                <p data-i18n="proj_3_desc">Frontend for a live gaming platform focused on performance and real-time user interaction.</p>
-            </div>
-            <i class="fas fa-arrow-up-right-from-square arrow-icon"></i>
-        </a>
-
-        <section class="card certs-card">
-            <h3 data-i18n="certs_title">Certifications</h3>
-            <div class="certs-grid">
-                <div class="cert-btn" title="Web Design Certificate">
-                    <div class="cert-icon-box"><i class="fas fa-palette"></i></div>
-                    <span class="cert-label">Web Design</span>
-                    <i class="fas fa-external-link-alt arrow-mini"></i>
-                </div>
-                <div class="cert-btn" title="Web Development Certificate">
-                    <div class="cert-icon-box"><i class="fas fa-code"></i></div>
-                    <span class="cert-label">Web Dev</span>
-                    <i class="fas fa-external-link-alt arrow-mini"></i>
-                </div>
-                <div class="cert-btn" title="English Proficiency — Native Level">
-                    <div class="cert-icon-box"><i class="fas fa-language"></i></div>
-                    <span class="cert-label">English Native</span>
-                    <i class="fas fa-external-link-alt arrow-mini"></i>
-                </div>
-                <div class="cert-btn" title="Bangla — Native Level">
-                    <div class="cert-icon-box"><i class="fas fa-globe"></i></div>
-                    <span class="cert-label">Bangla Native</span>
-                    <i class="fas fa-external-link-alt arrow-mini"></i>
-                </div>
-            </div>
-        </section>
-
-        <section class="card contact-card">
-            <div class="contact-content">
-                <h3 data-i18n="contact_title">Let's Talk</h3>
-                <p data-i18n="contact_desc">Have a project in mind? Send me a direct message.</p>
-                
-                <form id="contact-form" action="https://formspree.io/f/mnnebybn" method="POST" class="contact-form-grid">
-                    <div class="form-group">
-                        <input type="text" name="name" data-placeholder="name_ph" placeholder="Name" required class="form-input" aria-label="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email" required class="form-input" aria-label="Email address">
-                    </div>
-                    <div class="form-group full">
-                        <textarea name="message" data-placeholder="msg_ph" placeholder="How can I help you?" rows="3" required class="form-input" aria-label="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn primary submit-btn">
-                        <span data-i18n="send_btn">Send Message</span> <i class="fas fa-paper-plane"></i>
-                    </button>
-                    <p id="form-status" class="form-status" aria-live="polite"></p>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <dialog id="pro-modal" class="modal-glass">
-        <div class="modal-wrapper">
-            <button id="close-modal" class="close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
-            <header class="modal-header">
-                <h2 data-i18n="modal_title">Full Professional Profile</h2>
-                <p data-i18n="modal_subtitle">Extended details, tech stack, and complete portfolio.</p>
-            </header>
-            <div class="modal-body">
-                <div class="modal-section">
-                    <h3 data-i18n="about_me">About Me</h3>
-                    <p data-i18n="bio_full">
-                        Frontend Developer with 3+ years of experience building high-performance SaaS and real-time applications using Next.js, TypeScript, and React.
-                        Experienced in leading frontend teams, optimizing performance, and developing scalable web applications with modern state management and API integration.
-                        Based in Dhaka, Bangladesh — open to remote opportunities.
-                    </p>
-                </div>
-                <div class="modal-section">
-                    <h3 data-i18n="all_projects">Project Portfolio</h3>
-                    <div class="projects-grid-full">
-                        <a href="https://followguard.eduolihez.com" target="_blank" rel="noopener noreferrer" class="proj-item">
-                            <i class="fas fa-user-secret"></i>
-                            <div><strong>FollowGuard</strong><small>Instagram Analytics & Security</small></div>
-                        </a>
-                        <a href="https://mesbadalona.eduolihez.com" target="_blank" rel="noopener noreferrer" class="proj-item">
-                            <i class="fas fa-city"></i>
-                            <div><strong>Més Badalona</strong><small>PHP Citizen Platform</small></div>
-                        </a>
-                        <a href="https://passwdcentinel.eduolihez.com" target="_blank" rel="noopener noreferrer" class="proj-item">
-                            <i class="fas fa-key"></i>
-                            <div><strong>Passwd Centinel</strong><small>Secure Password Manager</small></div>
-                        </a>
-                        <a href="/rouletteos/" target="_blank" rel="noopener noreferrer" class="proj-item">
-                            <i class="fas fa-dice"></i>
-                            <div><strong>RouletteOS</strong><small>Classroom Gamification SaaS</small></div>
-                        </a>
-                        <a href="https://eduolihez.com/guardianes-digitales/index.html" target="_blank" rel="noopener noreferrer" class="proj-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <div><strong>Digital Guardians</strong><small>Cybersecurity Awareness Course</small></div>
-                        </a>
-                        <div class="proj-item" title="Hackathon Winner">
-                            <i class="fas fa-water"></i>
-                            <div><strong>Dewi (IoT)</strong><small>Hackathon Winner '25</small></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-section">
-                    <h3 data-i18n="stack_full">Full Tech Stack</h3>
-                    <div class="skills-tags">
-                        <span>HTML</span><span>CSS / SCSS</span><span>TailwindCSS</span><span>Bootstrap</span>
-                        <span>JavaScript</span><span>TypeScript</span><span>ReactJS</span><span>Next.js</span>
-                        <span>SSR / SSG</span><span>Redux</span><span>Zustand</span>
-                        <span>PHP</span><span>Laravel</span><span>MySQL</span>
-                        <span>Git</span><span>GitHub</span><span>GulpJS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a href="https://www.linkedin.com/in/abrahman" target="_blank" rel="noopener noreferrer" class="btn primary full-width">
-                    <i class="fab fa-linkedin"></i> <span data-i18n="view_linkedin">View Full Profile on LinkedIn</span>
-                </a>
-            </div>
-        </div>
-    </dialog>
-
-    <script src="script.js"></script>
-</body>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/app/main.tsx"></script>
+  </body>
 </html>
