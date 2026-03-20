@@ -1,23 +1,23 @@
 import type { RefObject } from "react";
-import { modalContent } from "../data/portfolioData";
 import AboutSection from "./modal/AboutSection";
 import EducationSection from "./modal/EducationSection";
 import ModalHeader from "./modal/ModalHeader";
 import ProfileDetailsSection from "./modal/ProfileDetailsSection";
 import ProjectsSection from "./modal/ProjectsSection";
 import StackSection from "./modal/StackSection";
+import useModal from "../hooks/useModal";
+import ModalFooter from "./modal/ModalFooter";
 
 type PortfolioModalProps = {
   modalRef: RefObject<HTMLDialogElement | null>;
   onClose: () => void;
 };
 
-function PortfolioModal({
-  modalRef,
-  onClose,
-}: PortfolioModalProps) {
+function PortfolioModal({ modalRef, onClose }: PortfolioModalProps) {
+  const { handleDialogClick } = useModal();
+
   return (
-    <dialog ref={modalRef} className="modal-glass" onClick={onDialogClick}>
+    <dialog ref={modalRef} className="modal-glass" onClick={handleDialogClick}>
       <div className="modal-wrapper">
         <button
           type="button"
@@ -35,17 +35,7 @@ function PortfolioModal({
           <StackSection />
           <ProfileDetailsSection />
         </div>
-        <div className="modal-footer">
-          <a
-            href={modalContent.footerHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn primary full-width"
-          >
-            <i className="fab fa-linkedin"></i>{" "}
-            <span>{modalContent.footerLabel}</span>
-          </a>
-        </div>
+        <ModalFooter/>
       </div>
     </dialog>
   );

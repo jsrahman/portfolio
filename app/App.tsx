@@ -1,5 +1,6 @@
-import React from "react";
+import React, { type MouseEvent } from "react";
 import PortfolioModal from "./components/PortfolioModal";
+``;
 import ProfileHeroSection from "./components/sections/ProfileHeroSection";
 import SocialSection from "./components/sections/SocialSection";
 import NowSection from "./components/sections/NowSection";
@@ -16,8 +17,15 @@ import useModal from "./hooks/useModal";
 function App() {
   const { setIsModalOpen, modalRef } = useModal();
   const { schemaMarkup } = useMeta();
+
+  
+
   return (
     <>
+      <script type="application/ld+json">{schemaMarkup}</script>
+      <div className="noise-overlay"></div>
+      <div className="ambient-glow"></div>
+
       <main className="bento-grid">
         <ProfileHeroSection onOpenModal={() => setIsModalOpen(true)} />
         <SocialSection />
@@ -34,11 +42,8 @@ function App() {
       <PortfolioModal
         modalRef={modalRef}
         onClose={() => setIsModalOpen(false)}
+        // onDialogClick={handleDialogClick}
       />
-
-      <div className="noise-overlay"></div>
-      <div className="ambient-glow"></div>
-      <script type="application/ld+json">{schemaMarkup}</script>
     </>
   );
 }
