@@ -1,5 +1,12 @@
-import { useEffect, useMemo, useRef, useState, type FormEvent, type MouseEvent } from "react";
-import profileImage from "../src/eduolihez_pfp.JPG";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type FormEvent,
+  type MouseEvent,
+} from "react";
+import profileImage from "../src/img.jpg";
 import MainContent from "./components/MainContent";
 import PortfolioModal from "./components/PortfolioModal";
 import {
@@ -9,6 +16,9 @@ import {
   personSchema,
   portfolioProjects,
   stackTags,
+  education,
+  languages,
+  interests,
 } from "./data/portfolioData";
 import { useDhakaClock } from "./hooks/useDhakaClock";
 
@@ -177,6 +187,9 @@ function App() {
         onDialogClick={handleDialogClick}
         portfolioProjects={portfolioProjects}
         stackTags={stackTags}
+        education={education}
+        languages={languages}
+        interests={interests}
       />
     </>
   );

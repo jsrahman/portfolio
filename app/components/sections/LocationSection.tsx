@@ -7,14 +7,13 @@ function LocationSection({ time }: LocationSectionProps) {
     <section className="card location-card">
       <div className="map-container">
         <iframe
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=90.3200%2C23.7300%2C90.4500%2C23.8200&layer=mapnik&marker=23.7808%2C90.3592"
-          title="Map of Dhaka, Bangladesh"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14601.39847074228!2d90.3577280794778!3d23.806163693604322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1774010488971!5m2!1sen!2sbd"
+          width="600"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
       <div className="glass-overlay">

@@ -120,6 +120,7 @@ body {
     position: relative;
     z-index: 1;
     margin-top: 28px;
+    margin-inline: auto;
 }
 
 @media (min-width: 600px) {

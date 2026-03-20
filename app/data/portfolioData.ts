@@ -48,6 +48,14 @@ export type Certification = {
   label: string;
 };
 
+export type EducationItem = {
+  degree: string;
+  institution: string;
+  date: string;
+  grade?: string;
+  courses?: string;
+};
+
 export type PortfolioProject = {
   href?: string;
   iconClass: string;
@@ -72,6 +80,7 @@ export const personSchema = {
   worksFor: {
     "@type": "Organization",
     name: "Thesoftking LTD.",
+    url: "https://thesoftking.com",
   },
   alumniOf: {
     "@type": "EducationalOrganization",
@@ -265,6 +274,32 @@ export const contactForm = {
   description: "Have a project in mind? Send me a direct message.",
 };
 
+export const education: EducationItem[] = [
+  {
+    degree: "Bachelor of Business Administration (BBA)",
+    institution: "Bangladesh National University",
+    date: "09/2015 - 01/2020",
+    grade: "2.65 Out of 4.00",
+    courses: "Business Studies",
+  },
+  {
+    degree: "Higher Secondary Certificate (HSC)",
+    institution: "Khan Saheb Kamaruddin College",
+    date: "01/2013 - 03/2015",
+    grade: "3.25 Out of 5.00",
+    courses: "Business Studies",
+  },
+];
+
+export const languages = ["English (Native)", "Bangla (Native)"];
+
+export const interests = [
+  "Reading Books",
+  "Collecting Stamps",
+  "Travelling",
+  "Playing with AI",
+];
+
 export const modalContent = {
   title: "Full Professional Profile",
   subtitle: "Extended details, tech stack, and complete portfolio.",
@@ -279,41 +314,28 @@ export const modalContent = {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    href: "https://followguard.eduolihez.com",
-    iconClass: "fas fa-user-secret",
-    title: "FollowGuard",
-    subtitle: "Instagram Analytics and Security",
+    href: "#",
+    iconClass: "fas fa-gamepad",
+    title: "Goldriders",
+    subtitle: "Gaming Platform — Next.js, Zustand",
   },
   {
-    href: "https://mesbadalona.eduolihez.com",
-    iconClass: "fas fa-city",
-    title: "Mes Badalona",
-    subtitle: "PHP Citizen Platform",
+    href: "#",
+    iconClass: "fas fa-users",
+    title: "Social Platform",
+    subtitle: "Real-time chat, membership, Next.js",
   },
   {
-    href: "https://passwdcentinel.eduolihez.com",
-    iconClass: "fas fa-key",
-    title: "Passwd Centinel",
-    subtitle: "Secure Password Manager",
+    href: "#",
+    iconClass: "fas fa-bolt",
+    title: "Stakegame",
+    subtitle: "Live Gaming Frontend",
   },
   {
-    href: "/rouletteos/",
-    iconClass: "fas fa-dice",
-    title: "RouletteOS",
-    subtitle: "Classroom Gamification SaaS",
-  },
-  {
-    href: "https://eduolihez.com/guardianes-digitales/index.html",
-    iconClass: "fas fa-shield-alt",
-    title: "Digital Guardians",
-    subtitle: "Cybersecurity Awareness Course",
-  },
-  {
-    iconClass: "fas fa-water",
-    title: "Dewi (IoT)",
-    subtitle: "Hackathon Winner '25",
-    static: true,
-    tooltip: "Hackathon Winner",
+    href: "#",
+    iconClass: "fas fa-cut",
+    title: "Salon Service",
+    subtitle: "HTML, SCSS, jQuery, GulpJS",
   },
 ];
 

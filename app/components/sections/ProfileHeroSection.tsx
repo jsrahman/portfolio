@@ -1,4 +1,4 @@
-import profileImage from "../../../src/eduolihez_pfp.JPG";
+import profileImage from "../../../src/img.jpg";
 import { profile } from "../../data/portfolioData";
 
 type ProfileHeroSectionProps = {

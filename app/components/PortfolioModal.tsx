@@ -2,6 +2,7 @@ import type { MouseEvent, RefObject } from "react";
 import {
   modalContent,
   type PortfolioProject,
+  type EducationItem,
 } from "../data/portfolioData";
 
 type PortfolioModalProps = {
@@ -10,6 +11,9 @@ type PortfolioModalProps = {
   onDialogClick: (event: MouseEvent<HTMLDialogElement>) => void;
   portfolioProjects: PortfolioProject[];
   stackTags: string[];
+  education: EducationItem[];
+  languages: string[];
+  interests: string[];
 };
 
 function PortfolioModal({
@@ -18,6 +22,9 @@ function PortfolioModal({
   onDialogClick,
   portfolioProjects,
   stackTags,
+  education,
+  languages,
+  interests,
 }: PortfolioModalProps) {
   return (
     <dialog ref={modalRef} className="modal-glass" onClick={onDialogClick}>
@@ -38,6 +45,29 @@ function PortfolioModal({
           <div className="modal-section">
             <h3>{modalContent.aboutTitle}</h3>
             <p>{modalContent.aboutText}</p>
+          </div>
+          <div className="modal-section">
+            <h3>Education</h3>
+            <div className="education-list">
+              {education.map((item) => (
+                <div
+                  key={`${item.degree}-${item.date}`}
+                  className="education-item"
+                  style={{ marginBottom: "1rem" }}
+                >
+                  <strong>{item.degree}</strong>
+                  <div>{item.institution}</div>
+                  <small>
+                    {item.date} {item.grade && `| Grade: ${item.grade}`}
+                  </small>
+                  {item.courses && (
+                    <div style={{ fontSize: "0.85rem", opacity: 0.8 }}>
+                      Courses: {item.courses}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
           <div className="modal-section">
             <h3>{modalContent.projectTitle}</h3>
@@ -79,6 +109,32 @@ function PortfolioModal({
               {stackTags.map((tag) => (
                 <span key={tag}>{tag}</span>
               ))}
+            </div>
+          </div>
+          <div className="modal-section">
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "1.5rem",
+              }}
+            >
+              <div>
+                <h3>Languages</h3>
+                <ul style={{ paddingLeft: "1.2rem" }}>
+                  {languages.map((lang) => (
+                    <li key={lang}>{lang}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3>Interests</h3>
+                <ul style={{ paddingLeft: "1.2rem" }}>
+                  {interests.map((interest) => (
+                    <li key={interest}>{interest}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
