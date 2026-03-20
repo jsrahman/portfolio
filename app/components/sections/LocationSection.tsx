@@ -1,8 +1,6 @@
-type LocationSectionProps = {
-  time: string;
-};
 
-function LocationSection({ time }: LocationSectionProps) {
+
+function LocationSection() {
   return (
     <section className="card location-card">
       <div className="map-container">
@@ -18,7 +16,7 @@ function LocationSection({ time }: LocationSectionProps) {
       </div>
       <div className="glass-overlay">
         <div className="time-widget">
-          <span>{time}</span>
+          {/* <span>{time}</span> */}
           <small>Dhaka, BD</small>
         </div>
         <div className="location-icon">

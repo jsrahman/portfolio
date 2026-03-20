@@ -1,69 +1,14 @@
-import type { CSSProperties } from "react";
 import resumePdf from "../../src/cv of Abdur Rahman.pdf";
-
-export type FormStatus = {
-  type: "" | "success" | "error";
-  message: string;
-};
-
-export type SocialLink = {
-  href: string;
-  className: string;
-  ariaLabel: string;
-  icon: string;
-  label: string;
-};
-
-export type CurrentFocusItem = {
-  dotClass: string;
-  text: string;
-};
-
-export type CareerItem = {
-  company: string;
-  role: string;
-  date: string;
-  current?: boolean;
-};
-
-export type ServiceItem = {
-  iconClass: string;
-  iconStyle?: CSSProperties;
-  title: string;
-  subtitle: string;
-};
-
-export type FeaturedProject = {
-  href: string;
-  className: string;
-  iconClass: string;
-  tag: string;
-  title: string;
-  description: string;
-};
-
-export type Certification = {
-  title: string;
-  iconClass: string;
-  label: string;
-};
-
-export type EducationItem = {
-  degree: string;
-  institution: string;
-  date: string;
-  grade?: string;
-  courses?: string;
-};
-
-export type PortfolioProject = {
-  href?: string;
-  iconClass: string;
-  title: string;
-  subtitle: string;
-  static?: boolean;
-  tooltip?: string;
-};
+import type {
+  CareerItem,
+  Certification,
+  CurrentFocusItem,
+  EducationItem,
+  FeaturedProject,
+  PortfolioProject,
+  ServiceItem,
+  SocialLink,
+} from "./portfolioData.types";
 
 export const metaContent = {
   title: "Abdur Rahman | Frontend Developer - Next.js, React and TypeScript",
@@ -216,7 +161,7 @@ export const services: ServiceItem[] = [
 
 export const featuredProjects: FeaturedProject[] = [
   {
-    href: "#",
+    href: "https://goldriders-only-frontend.vercel.app/",
     className: "card project-card p-1",
     iconClass: "fas fa-gamepad",
     tag: "Gaming Platform",
@@ -225,7 +170,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Scalable gaming platform built with Next.js and Zustand, with optimized rendering.",
   },
   {
-    href: "#",
+    href: "https://next-demo.viserlab.com/fanslab/",
     className: "card project-card p-2",
     iconClass: "fas fa-users",
     tag: "Social Media",
@@ -234,7 +179,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Paid social media app with real-time chat, membership system, and advanced post interactions.",
   },
   {
-    href: "#",
+    href: "https://stakegame.net/",
     className: "card project-card p-3",
     iconClass: "fas fa-bolt",
     tag: "Live Gaming",
@@ -268,7 +213,7 @@ export const certifications: Certification[] = [
 ];
 
 export const contactForm = {
-  action: "https://formspree.io/f/mnnebybn",
+  action: "https://formspree.io/f/mlgpvbqk",
   method: "POST",
   title: "Let's Talk",
   description: "Have a project in mind? Send me a direct message.",
@@ -291,7 +236,7 @@ export const education: EducationItem[] = [
   },
 ];
 
-export const languages = ["English (Native)", "Bangla (Native)"];
+export const languages = ["English (Fluent)", "Bangla (Native)"];
 
 export const interests = [
   "Reading Books",
@@ -314,25 +259,25 @@ export const modalContent = {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    href: "#",
+    href: "https://goldriders-only-frontend.vercel.app/",
     iconClass: "fas fa-gamepad",
     title: "Goldriders",
     subtitle: "Gaming Platform — Next.js, Zustand",
   },
   {
-    href: "#",
+    href: "https://next-demo.viserlab.com/fanslab/",
     iconClass: "fas fa-users",
     title: "Social Platform",
     subtitle: "Real-time chat, membership, Next.js",
   },
   {
-    href: "#",
+    href: "https://stakegame.net/",
     iconClass: "fas fa-bolt",
     title: "Stakegame",
     subtitle: "Live Gaming Frontend",
   },
   {
-    href: "#",
+    href: "https://salon-abrahman.netlify.app/",
     iconClass: "fas fa-cut",
     title: "Salon Service",
     subtitle: "HTML, SCSS, jQuery, GulpJS",

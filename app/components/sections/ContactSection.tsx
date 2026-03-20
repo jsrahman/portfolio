@@ -1,19 +1,45 @@
-import type { FormEvent } from "react";
-import { contactForm, type FormStatus } from "../../data/portfolioData";
+import { useState, type FormEvent } from "react";
+import { contactForm } from "../../data/portfolioData";
+import type { FormStatus } from "../../data/portfolioData.types";
 
-type ContactSectionProps = {
-  formAction: string;
-  formMethod: string;
-  formStatus: FormStatus;
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void | Promise<void>;
-};
+function ContactSection() {
+  const [formStatus, setFormStatus] = useState<FormStatus>({
+    message: "",
+    type: "",
+  });
 
-function ContactSection({
-  formAction,
-  formMethod,
-  formStatus,
-  onSubmit,
-}: ContactSectionProps) {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      setFormStatus({ message: "Sending...", type: "" });
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setFormStatus({ message: "Message sent successfully!", type: "success" });
+        form.reset();
+      } else {
+        setFormStatus({
+          message: "Oops! There was a problem submitting your form",
+          type: "error",
+        });
+      }
+    } catch (error) {
+      setFormStatus({
+        message: "Oops! There was a problem submitting your form",
+        type: "error",
+      });
+    }
+  };
+
   return (
     <section className="card contact-card">
       <div className="contact-content">
@@ -21,10 +47,10 @@ function ContactSection({
         <p>{contactForm.description}</p>
 
         <form
-          action={formAction}
-          method={formMethod}
+          action={contactForm.action}
+          method={contactForm.method}
           className="contact-form-grid"
-          onSubmit={onSubmit}
+          onSubmit={handleSubmit}
         >
           <div className="form-group">
             <input
