@@ -1,12 +1,12 @@
 import type { RefObject } from "react";
-import AboutSection from "./modal/AboutSection";
-import EducationSection from "./modal/EducationSection";
-import ModalHeader from "./modal/ModalHeader";
-import ProfileDetailsSection from "./modal/ProfileDetailsSection";
-import ProjectsSection from "./modal/ProjectsSection";
-import StackSection from "./modal/StackSection";
-import useModal from "../hooks/useModal";
-import ModalFooter from "./modal/ModalFooter";
+import AboutSection from "./AboutSection";
+import EducationSection from "./EducationSection";
+import ModalHeader from "./ModalHeader";
+import ProfileDetailsSection from "./ProfileDetailsSection";
+import ProjectsSection from "./ProjectsSection";
+import StackSection from "./StackSection";
+import useModal from "../../hooks/useModal";
+import ModalFooter from "./ModalFooter";
 
 type PortfolioModalProps = {
   modalRef: RefObject<HTMLDialogElement | null>;
@@ -35,7 +35,7 @@ function PortfolioModal({ modalRef, onClose }: PortfolioModalProps) {
           <StackSection />
           <ProfileDetailsSection />
         </div>
-        <ModalFooter/>
+        <ModalFooter />
       </div>
     </dialog>
   );

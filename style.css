@@ -476,6 +476,14 @@ h3 {
     line-height: 1;
     letter-spacing: -0.02em;
 }
+.time-widget .time-show {
+    font-size:  3rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
 
 .time-widget small {
     display: block;

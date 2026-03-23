@@ -1,6 +1,4 @@
-import React, { type MouseEvent } from "react";
-import PortfolioModal from "./components/PortfolioModal";
-``;
+import PortfolioModal from "./components/modal/PortfolioModal";
 import ProfileHeroSection from "./components/sections/ProfileHeroSection";
 import SocialSection from "./components/sections/SocialSection";
 import NowSection from "./components/sections/NowSection";
@@ -17,8 +15,6 @@ import useModal from "./hooks/useModal";
 function App() {
   const { setIsModalOpen, modalRef } = useModal();
   const { schemaMarkup } = useMeta();
-
-  
 
   return (
     <>
@@ -42,7 +38,6 @@ function App() {
       <PortfolioModal
         modalRef={modalRef}
         onClose={() => setIsModalOpen(false)}
-        // onDialogClick={handleDialogClick}
       />
     </>
   );

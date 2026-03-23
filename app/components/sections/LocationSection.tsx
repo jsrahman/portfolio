@@ -1,6 +1,7 @@
-
+import { useDhakaClock } from "../../hooks/useDhakaClock";
 
 function LocationSection() {
+  const time = useDhakaClock();
   return (
     <section className="card location-card">
       <div className="map-container">
@@ -16,7 +17,9 @@ function LocationSection() {
       </div>
       <div className="glass-overlay">
         <div className="time-widget">
-          {/* <span>{time}</span> */}
+          <span suppressHydrationWarning className="time-show">
+            {time}
+          </span>
           <small>Dhaka, BD</small>
         </div>
         <div className="location-icon">

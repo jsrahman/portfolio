@@ -1,7 +1,4 @@
 import { modalContent, portfolioProjects } from "../../data/portfolioData";
-
-
-
 function ProjectsSection() {
   return (
     <div className="modal-section">
@@ -9,7 +6,11 @@ function ProjectsSection() {
       <div className="projects-grid-full">
         {portfolioProjects.map((project) =>
           project.static ? (
-            <div key={project.title} className="proj-item" title={project.tooltip}>
+            <div
+              key={project.title}
+              className="proj-item"
+              title={project.tooltip}
+            >
               <i className={project.iconClass}></i>
               <div>
                 <strong>{project.title}</strong>
