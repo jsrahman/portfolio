@@ -32,8 +32,8 @@ Built with **React 19**, **TypeScript**, and **Vite**, using a modern **Bento-gr
 | **Frameworks**  | React, Next.js, SSR / SSG                         |
 | **Styling**     | TailwindCSS, Bootstrap, SCSS                      |
 | **State**       | Redux, Zustand                                    |
-| **Backend**     | PHP, Laravel, MySQL                               |
-| **Tooling**     | Git, GitHub, GulpJS, Vite, CI/CD                 |
+| **Backend**     | Firebase, Supabase, Prisma                        |
+| **Tooling**     | Git, GitHub, GulpJS, Vite, CI/CD                  |
 
 ---
 
@@ -69,8 +69,8 @@ Static business site built with HTML, SCSS, jQuery, and GulpJS.
 
 - 🎨 Web Design Certificate
 - 💻 Web Development Certificate
-- 🌐 English Proficiency — Native Level
-- 🗣️ Bangla — Native Level
+- 🌐 English Proficiency — Fluent
+- 🗣️ Bangla — Native
 
 ---
 
