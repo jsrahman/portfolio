@@ -141,5 +141,4 @@ Feel free to reach out via the contact form on the site or directly:
 - 🐙 [GitHub — jsrahman](https://github.com/jsrahman)
 
 ---
-
-*Built with React 19 · TypeScript · Vite · Bento UI*
+<sub>Copyright (c) 2026 Edu Olivares</sub>
