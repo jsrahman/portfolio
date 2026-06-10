@@ -141,4 +141,4 @@ Feel free to reach out via the contact form on the site or directly:
 - 🐙 [GitHub — jsrahman](https://github.com/jsrahman)
 
 ---
-<sub>Copyright (c) 2026 Edu Olivares</sub>
+<sub>Copyright (c) 2026 </sub>
